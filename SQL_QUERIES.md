@@ -36,9 +36,9 @@ select round(sum(total_price),2) as Total_revenue from pizza_sales;
 **Result :**
 
 | Total_revenue |
-+---------------+
+|---------------|
 |     817860.05 |
-+---------------+
+|---------------|
 
 
 **Q2 : AVERAGE ORDER VALUE.**
