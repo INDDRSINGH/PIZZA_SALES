@@ -17,6 +17,8 @@ Dataset in XLSX format can be downloaded from [here](https://github.com/INDDRSIN
   * Excel
   * Dashboard can be downloaded from [here](https://github.com/INDDRSINGH/PIZZA_SALES/blob/main/pizza_sales%20DASHBOARD.xlsx)
 
+![Excel Dashboard](https://github.com/INDDRSINGH/PIZZA_SALES/blob/main/Excel%20Dashboard.png)
+
 ## Entity Relationship Diagram 
 
 ![DatabaseSchema](https://github.com/INDDRSINGH/PIZZA_SALES/blob/main/EER.png)
