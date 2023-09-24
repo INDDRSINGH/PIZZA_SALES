@@ -58,7 +58,9 @@ SELECT ROUND(SUM(TOTAL_PRICE) / COUNT(DISTINCT ORDER_ID),2) AS AVG_ORDER_VALUE F
 ````sql
 SELECT SUM(QUANTITY) AS TOTAL_PIZZAS_SOLD FROM PIZZA_SALES;
 ````
+
 **Result :**
+
 
 | TOTAL_PIZZAS_SOLD |
 |-------------------|
@@ -69,7 +71,9 @@ SELECT SUM(QUANTITY) AS TOTAL_PIZZAS_SOLD FROM PIZZA_SALES;
 ````sql
 SELECT COUNT(DISTINCT ORDER_ID) AS TOTAL_ORDERS FROM PIZZA_SALES;
 ````
+
 **Result :**
+
 
 | TOTAL_ORDERS |
 |--------------|
@@ -80,7 +84,9 @@ SELECT COUNT(DISTINCT ORDER_ID) AS TOTAL_ORDERS FROM PIZZA_SALES;
 ````sql
 SELECT SUM(QUANTITY)/COUNT(DISTINCT ORDER_ID) AS AVG_PIZZA_SOLD FROM PIZZA_SALES;
 ````
+
 **Result :**
+
 
 | AVG_PIZZA_SOLD |
 |----------------|
@@ -94,7 +100,9 @@ SELECT DATE_FORMAT(ORDER_DATE, "%a") AS DAYS, COUNT(DISTINCT ORDER_ID) AS NUMBER
 FROM PIZZA_SALES
 GROUP BY days;
 ````
+
 **Result :**
+
 
 | DAYS | NUMBER_OF_ORDERS |
 +------+------------------+
@@ -116,6 +124,7 @@ GROUP BY TIME_INTERVAL;
 ````
 
 **Result :**
+
 
 | TIME_INTERVAL | NUMBER_OF_ORDERS |
 |---------------|------------------|
@@ -143,7 +152,9 @@ SELECT PIZZA_CATEGORY, ROUND(SUM(TOTAL_PRICE) * 100 / (SELECT SUM(TOTAL_PRICE) F
 FROM PIZZA_SALES
 GROUP BY PIZZA_CATEGORY;
 ````
+
 **Result :**
+
 
 | PIZZA_CATEGORY | SALES_PERCENTAGE |
 |----------------|------------------|
@@ -161,7 +172,9 @@ FROM PIZZA_SALES
 GROUP BY PIZZA_SIZE
 ORDER BY SALES_PERCENTAGE DESC ;
 ````
+
 **Result :**
+
 
 | PIZZA_SIZE | SALES_PERCENTAGE |
 |------------|------------------|
@@ -187,7 +200,9 @@ group by days
 order by days;
 ````
 
+
 **Result :**
+
 
 | DAYS | Q1      | Q2      | Q3       | Q4       |
 |------|---------|---------|----------|----------|
@@ -208,7 +223,9 @@ FROM PIZZA_SALES
 GROUP BY PIZZA_CATEGORY;
 ````
 
+
 **Result :**
+
 
 | PIZZA_CATEGORY | TOTAL_QUANTITY_SOLD |
 |----------------|---------------------|
@@ -227,7 +244,9 @@ GROUP BY PIZZA_NAME
 ORDER BY NUMBER_OF_PIZZAS_SOLD DESC
 LIMIT 5;
 ````
+
 **Result :**
+
 
 | PIZZA_NAME                 | NUMBER_OF_PIZZAS_SOLD |
 |----------------------------|-----------------------|
@@ -247,7 +266,9 @@ GROUP BY PIZZA_NAME
 ORDER BY NUMBER_OF_PIZZAS_SOLD ASC
 LIMIT 5;
 ````
+
 **Result :**
+
 
 | PIZZA_NAME                | NUMBER_OF_PIZZAS_SOLD |
 |---------------------------|-----------------------|
