@@ -53,7 +53,7 @@ SELECT ROUND(SUM(TOTAL_PRICE) / COUNT(DISTINCT ORDER_ID),2) AS AVG_ORDER_VALUE F
 |-----------------|
 |           38.31 |
 
-** Q3 : TOTAL PIZZAS SOLD**
+**Q3 : TOTAL PIZZAS SOLD**
 
 ````sql
 SELECT SUM(QUANTITY) AS TOTAL_PIZZAS_SOLD FROM PIZZA_SALES;
@@ -105,7 +105,7 @@ GROUP BY days;
 
 
 | DAYS | NUMBER_OF_ORDERS |
-+------+------------------+
+|------|------------------|
 | Fri  |             3538 |
 | Mon  |             2794 |
 | Sat  |             3158 |
