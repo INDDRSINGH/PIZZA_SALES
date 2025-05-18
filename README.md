@@ -1,4 +1,4 @@
-# PIZZA_SALES
+# PIZZA SALES DATA ANALYSIS
 
 ![DatabaseSchema](https://github.com/INDDRSINGH/PIZZA_SALES/blob/main/PIZZA.png)
 
